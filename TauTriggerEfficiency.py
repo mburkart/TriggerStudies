@@ -8,7 +8,7 @@ import ROOT as root
 # Disable ROOT internal argument parser.
 root.PyConfig.IgnoreCommandLineOptions = True
 root.gErrorIgnoreLevel = root.kError
-root.SetBatch(1)
+root.gROOT.SetBatch(1)
 
 logger = logging.getLogger(__name__)
 
